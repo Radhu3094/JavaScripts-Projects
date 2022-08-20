@@ -1,0 +1,25 @@
+Enter number: <input type='text' id='t1'><br>
+<input type='button'  value='click' id='b1' onclick='f1()'>
+<p id='ans'></p>
+
+<script>
+function f1()
+{
+num=parseFloat(document.getElementById("t1").value);
+if(num<=0.0)
+{
+if(num==0.0)
+{
+document.getElementById("ans").innerHTML= "Number is zero: "+num;
+}
+else
+{
+document.getElementById("ans").innerHTML= "Number is negative: "+num;
+}
+}
+else
+{
+document.getElementById("ans").innerHTML= "Number is positive: "+num;
+}
+}
+</script>

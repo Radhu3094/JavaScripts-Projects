@@ -1,0 +1,15 @@
+Enter Number:<input type='text' id='t1'><br>
+<input type='button' value='Factorial' id='b1' onclick='f1()'>
+<p id ='p1'></p>
+<script>
+function f1()
+{
+no=parseFloat(document.getElementById("t1").value);
+fact=1;
+for(i=1;i<=no;i++)
+{
+fact=fact*i;
+}
+document.getElementById("p1").innerHTML=fact;
+}
+</script>

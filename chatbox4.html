@@ -1,0 +1,75 @@
+<style>
+.red{
+     color:red;
+    }
+.blue{
+     color:blue;
+    }
+div
+{
+	display:inline-block;
+	height:250px;
+	width:200px; 
+	border:solid black;
+	overflow-wrap:break-word;
+	overflow:scroll;
+}
+</style>
+<div id="div1" style="margin-left:200"></div>
+<div id="div2" style="margin-left:200"></div><br>
+<input type='text' id='tx1' onkeyup='f5()' placeholder='Type message' style='margin-left:200;width:205px'>
+<input type='text' id='tx2' onkeyup='f6()' placeholder='Type message' style='margin-left:200;width:205px'><br>
+<input type='button' value='Send' id='b1' onclick='f1()' style='margin-left:200;'>
+<input type='button' value='Delete' id='b3' onclick='f3()' style='margin-left:100;'>
+<input type='button' value='Send' id='b2' onclick='f2()' style='margin-left:200;'>
+<input type='button' value='Delete' id='b4' onclick='f4()' style='margin-left:100;'><br>
+<span id='per1' class='red' style='margin-left:260px;font-size:20px;font-weight:bold'></span>
+<span id='per2' class='blue' style='margin-left:350px;font-size:20px;font-weight:bold'></span>
+<script>
+localStorage.setItem("chat1","");
+localStorage.setItem("chat2","");
+var x=localStorage.getItem("name1");
+var y=localStorage.getItem("name2");
+document.getElementById("per1").innerHTML=x;
+document.getElementById("per2").innerHTML=y;
+</script>
+<script>
+function f5()
+{
+document.getElementById("div2").innerHTML="Typing....";
+}
+function f6()
+{
+document.getElementById("div1").innerHTML="Typing....";
+}
+function f1()
+{
+tx1=document.getElementById("tx1").value;
+if(tx1.length>0)
+{
+document.getElementById("div2").className="red";
+var x=localStorage.getItem("name1");
+var pc=localStorage.getItem("chat1");
+document.getElementById("div2").innerHTML=pc+"\n"+x+": "+tx1;
+ch1 = document.getElementById("div2").innerHTML;
+localStorage.setItem("chat1",ch1);
+}
+}
+function f2()
+{
+tx2=document.getElementById("tx2").value;
+if(tx2.length>0)
+{
+document.getElementById("div1").className="blue";
+var y=localStorage.getItem("name2");
+var pc=localStorage.getItem("chat2");
+document.getElementById("div1").innerHTML=pc+"\n"+y+": "+tx2;
+ch2 = document.getElementById("div1").innerHTML;
+localStorage.setItem("chat2",ch2);
+}
+}
+function f3()
+{
+localStorage.removeItem("chat1");
+}
+</script>

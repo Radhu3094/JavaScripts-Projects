@@ -1,0 +1,49 @@
+Events:
+        -> onClick()
+	   -> onLoad()    Bydefault
+	   -> onResize()
+	   -> onKeyUp
+	   -> onKeyDown
+	   -> onKeyPress
+        -> onMouseOver
+        -> onMouseOut
+        -> onFocus
+	   -> onBlur
+        -> onchange
+        -> Timing Events
+			* setTimeOut   :   page load hone ke kitne der baad yeh chalga
+			* setInterval  :   interval me chalega 
+
+
+----------------------------------------------------------
+<input type="button" value="click" onclick="f1()">
+<body onresize="f1()">
+<input type='text' onkeyup="f1()"> 
+<input type='text' onkeydown="f1()">
+<input type='text' onkeypress="f1()"> 
+
+ <input type='text' onmouseover="f1()"> 
+
+<input type='text' onmouseOut="f1()"> 
+
+<input type='text' onfocus="f1()"> 
+
+<input type='text' onBlur="f1()">
+<input type='checkbox' onchange="f1()"> 
+<script>
+function f1()
+{
+alert("Hello");
+//console.log();
+}
+function f2()
+{
+  
+  console.log("call");
+}
+setTimeout(f1,5000);
+setInterval(f2,1000);
+
+</script>
+
+		

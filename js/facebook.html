@@ -1,0 +1,52 @@
+<style>
+.red{
+border-color:red;
+}
+.green{
+border-color:green;
+}
+.red1{
+color:red;
+}
+</style>
+First name<input id="i1" type="text" onBlur=f1() >
+<br>
+last name<input id="i2"type="text" onBlur=f2() ><br>
+<input type="button" value="log in" onclick=f3() >
+
+
+<p id="ans"></p>
+<script>
+function f1()
+{
+	ty=document.getElementById("i1").value;
+  if(ty=="")
+	{
+	document.getElementById("i1").className="red";
+	}
+	else
+	{
+	document.getElementById("i1").className="green";
+	}
+}
+function f2()
+{
+  ty2=document.getElementById("i2").value;
+if(ty2=="")
+	{
+	document.getElementById("i2").className="red";
+	}
+	else
+	{
+		document.getElementById("i2").className="green";
+	}
+}
+function f3()
+{
+ty=document.getElementById("i1").value;
+ty2=document.getElementById("i2").value;
+if(ty==""&&ty2=="")
+document.getElementById("ans").innerHTML="The email address or mobile number you entered isn't connected to an account. Find your account and log in";
+document.getElementById("ans").className="red1";
+}
+</script>

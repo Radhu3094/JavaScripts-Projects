@@ -1,0 +1,22 @@
+Enter Basic salary: <input type='text' id='t1'><br>
+Enter HRA: <input type='text' id='t2'><br>
+Enter DA: <input type='text' id='t3'><br>
+Enter PF: <input type='text' id='t4'><br>
+<input type='button' value='Gross salary' id='b1' onclick='f1()'><br>
+<p id='p1'></p>
+<script>
+function f1()
+{
+basic=parseFloat(document.getElementById("t1").value);
+temp1=parseFloat(document.getElementById("t2").value);
+hra=(temp1/100)*basic;
+temp2=parseFloat(document.getElementById("t3").value);
+da=(temp2/100)*basic;
+temp3=parseFloat(document.getElementById("t4").value);
+pf=(temp3/100)*basic;
+salary=basic+hra+da-pf;
+document.getElementById("p1").innerHTML=salary;
+} 
+</script>
+
+ 

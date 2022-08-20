@@ -1,0 +1,43 @@
+<div style="border:solid; height:100px; width:100px;" id="d1" >
+
+</div>
+<style>
+div.r1
+{
+background-color: red;
+}
+div.g1
+{
+background-color: green;
+}
+div.b1
+{
+background-color: blue;
+}
+div.y1
+{
+background-color: yellow;
+}
+</style>
+<input type='button' value='red' onclick="r()" id="d1" class="">
+<input type='button' value='green' onclick="g()"  id="d1" class="">
+<input type='button' value='blue' onclick="b()"  id="d1" class="">
+<input type='button' value='yellow' onclick="y()"  id="d1" class="">
+<script>
+function r()
+{
+	document.getElementById("d1").className="r1";
+}
+function g()
+{
+	document.getElementById("d1").className="g1";
+}
+function b()
+{
+	document.getElementById("d1").className="b1";
+}
+function y()
+{
+	document.getElementById("d1").className="y1";
+}
+</script>

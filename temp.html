@@ -1,0 +1,12 @@
+Enter temperature in Celcius: <input type='text' id='t1'><br> 
+<input type='button' value='Click' onclick='f1()'>
+<p id='p1'></p>
+<script>
+function f1()
+{
+t1=parseFloat(document.getElementById("t1").value);
+temp=(t1*1.8)+32;
+document.getElementById("p1").innerHTML="Temperature in Fahrenheit: "+temp;
+
+}
+</script>

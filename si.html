@@ -1,0 +1,17 @@
+Principal amount: <p id="p"></p><br>
+Interest rate: <p id="i"></p><br>
+Time: <p id="d"></p><br>
+Simple interest: <p id="s"></p>
+<script>
+pri=prompt("Enter principal amount");
+int=prompt("Enter Rate of intrest");
+du=prompt("Enter time duration");
+pri=parseFloat(pri);
+int=parseFloat(int);
+du=parseFloat(du);
+si=(pri+int+du)/100;
+document.getElementById("p").innerHTML = pri;
+document.getElementById("i").innerHTML = int;
+document.getElementById("d").innerHTML = du;
+document.getElementById("s").innerHTML = si;
+</script>

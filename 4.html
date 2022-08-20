@@ -1,0 +1,40 @@
+<p id="ans"></p>
+<p id="ans2"></p>
+<script>
+var str="Hitasha: Hi.. \n Radhika: Hi \n Hitasha: Hi.. \n Radhika: Hello \n Hitasha: Hi.. \n ";
+document.getElementById("ans").innerHTML=str;
+</script>
+
+<button onclick="f()">Delete</button>
+<script>
+function check(str)
+{
+	
+    
+	h1=str.indexOf("Radhika:");
+	h2=str.indexOf("\n",h1);
+
+	var neww=str.substr(0,h1) + str.substr(h2);
+	h3=neww.indexOf("Radhika:");
+	if(h3>0)
+	{
+		check(neww);
+	}
+	else
+	{	
+
+	document.getElementById("ans2").innerHTML=neww;
+	}
+}
+function f()
+{
+ var str="Hitasha: Hi.. \n Radhika: Hi \n Hitasha: Hi.. \n Radhika: Hello \n Hitasha: Hi.. \n ";
+
+	check(str);
+   	
+	
+	
+}
+
+
+</script>

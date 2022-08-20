@@ -1,0 +1,13 @@
+Height: <input type="text" id="h1">
+Base: <input type="text" id="b1"><br>
+<input type="button" onclick="f1()" value="Click">
+<p id="p1"></p>
+<script>
+function f1()
+{
+height=document.getElementById("h1").value;
+base=document.getElementById("b1").value;
+area=(height*base)/2;
+document.getElementById("p1").innerHTML="Area of triangle is:"+area;
+}
+</script>

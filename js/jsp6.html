@@ -1,0 +1,46 @@
+<style>
+.f1
+{
+ background-image: url("iPhone-XR-front-view-760x380 1.jpg");
+ background-position:center;
+ background-size: 100% 100%; 
+ sbackground-attachment: fixed;
+ background-repeat:no-repeat;
+}
+.f2
+{
+ background-image: url("iPhone 2.jpg");
+ background-position:center;
+ background-size: 100% 100%; 
+ sbackground-attachment: fixed;
+ background-repeat:no-repeat;
+}
+.f3
+{
+ background-image: url("iPhone3.jpg");
+ background-position:center;
+ background-size: 100% 100%; 
+ sbackground-attachment: fixed;
+ background-repeat:no-repeat;
+}
+</style>
+<div style="border:solid; height:300px; width:300px; margin:0 auto; background-color:gray;" id="d1" >
+</div>
+<span style="position:absolute; margin-left:57px; margin-top:-230px;">
+<input type='button' value='First' onclick="f()" id="d1" class=""><br>
+<input type='button' value='Second' onclick="s()"  id="d1" class=""><br>
+<input type='button' value='Third' onclick="t()"  id="d1" class=""><br></span>
+<script>
+function f()
+{
+	document.getElementById("d1").className="f1";
+}
+function s()
+{
+	document.getElementById("d1").className="f2";
+}
+function t()
+{
+	document.getElementById("d1").className="f3";
+}
+</script>

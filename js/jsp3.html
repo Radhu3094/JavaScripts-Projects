@@ -1,0 +1,57 @@
+Enter first Number:<input type="number" id="no1"> 
+Enter Second Number:<input type="number" id="no2"><br>
+<input type="button" value='+' onclick="f1()">
+<input type="button" value='-' onclick="f2()">
+<input type="button" value='X' onclick="f3()">
+<input type="button" value='/' onclick="f4()">
+<p id="ans"></p>
+<script>
+function f1()
+{
+co=confirm("Are you Sure");
+
+if(co==true)
+{
+no1=document.getElementById("no1").value;
+no2=document.getElementById("no2").value;
+no1=parseFloat(no1);
+no2=parseFloat(no2);
+sum= no1 + no2;
+document.getElementById("ans").innerHTML=sum;
+document.getElementById("no1").value="";
+document.getElementById("no2").value="";
+}
+else
+{
+	alert("Cancel");
+}
+}
+function f2()
+{
+no1=document.getElementById("no1").value;
+no2=document.getElementById("no2").value;
+no1=parseFloat(no1);
+no2=parseFloat(no2);
+sub= no1 - no2;
+document.getElementById("ans").innerHTML=sub;
+}
+function f3()
+{
+no1=document.getElementById("no1").value;
+no2=document.getElementById("no2").value;
+no1=parseFloat(no1);
+no2=parseFloat(no2);
+mul= no1 * no2;
+document.getElementById("ans").innerHTML=mul;
+}
+function f4()
+{
+no1=document.getElementById("no1").value;
+no2=document.getElementById("no2").value;
+no1=parseFloat(no1);
+no2=parseFloat(no2);
+div= no1 / no2;
+document.getElementById("ans").innerHTML=div;
+}
+
+</script>

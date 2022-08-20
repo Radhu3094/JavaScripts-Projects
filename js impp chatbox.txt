@@ -1,0 +1,8 @@
+1.  show message typing....(green) while writting msz 
+2.  blank when click send button 
+3.  show also previous messages 
+4.  chat winbdow open hogi jab niche text box click karunga 
+5.  radhikha name :  blue 
+    Hitasha  name :  red 
+6.  Chat name bhi apan daalenge  
+7.  Delete all :  

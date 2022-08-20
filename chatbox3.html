@@ -1,0 +1,72 @@
+<style>
+.red{
+color:red;}
+.blue{
+color:blue;
+}
+</style>
+<p id='h1'></p>
+<p id='h2'></p>
+<script>
+localStorage.setItem("chat1","");
+localStorage.setItem("chat2","");
+var x=localStorage.getItem("name1");
+var y=localStorage.getItem("name2");
+document.getElementById("h1").innerHTML=x;
+document.getElementById("h2").innerHTML=y;
+</script>
+
+<input type='text' id='tx1'  placeholder="Type message...." onkeyup='f1()'>
+<input type='button' value='send' id='b1' onclick='f3()'>
+<input type='button' value='delete chat' id='b3' onclick='f5()'>
+<textarea id='ta1' rows="15" cols="15"></textarea>
+<input type='text' id='tx2'  placeholder="Type message...." onkeyup='f2()'>
+<input type='button' value='send' id='b2' onclick='f4()'>
+<input type='button' value='delete chat' id='b1' onclick='f6()'>
+<textarea id='ta2' rows="15" cols="15"></textarea></br>
+<input type='button' value='Delete all' id='b5' onclick='f7()'>
+<script>
+function f1()
+{
+document.getElementById("ta2").value= "typing...";
+}
+function f2()
+{
+document.getElementById("ta1").value= "typing...";
+}
+function f3()
+{
+v1 = document.getElementById("tx1").value;
+var x=localStorage.getItem("name1");
+document.getElementById("ta2").className="red";
+var pc=localStorage.getItem("chat1");
+document.getElementById("ta2").value= pc+"\n"+x+": "+v1;
+ch1 = document.getElementById("ta2").value;
+localStorage.setItem("chat1",ch1);
+}
+function f4()
+{
+v1 = document.getElementById("tx2").value;
+var y=localStorage.getItem("name2");
+document.getElementById("ta1").className="blue";
+var pc=localStorage.getItem("chat2");
+document.getElementById("ta1").value=pc+"\n"+y+": "+v1;
+ch2= document.getElementById("ta1").value;
+localStorage.setItem("chat2",ch2);
+}
+function f5()
+{
+localStorage.removeItem("chat1");
+}
+function f6()
+{
+localStorage.removeItem("chat2");
+}
+function f7()
+{
+localStorage.removeItem("name1");
+localStorage.removeItem("name2");
+localStorage.removeItem("chat1");
+localStorage.removeItem("chat2");
+}
+</script>

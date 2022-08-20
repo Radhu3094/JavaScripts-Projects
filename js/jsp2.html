@@ -1,0 +1,19 @@
+<input type="button" value='click' onclick="f1()"><br>
+Enter your Name: <input type="text" id="fn"><br>
+Enter your Email:<input type="email" id='em'><br>
+Enter your Number:<input type="number" id="mo"><br>
+
+
+<p id="ans"></p>
+<script>
+function f1()
+{
+	 fn=document.getElementById("fn").value;
+	 
+
+		document.getElementById("em").value=fn;  // form ka element value
+
+document.getElementById("ans").innerHTML=fn;  // non form
+}
+</script>
+

@@ -1,0 +1,45 @@
+<input type="button" value='click' onclick="f2()">
+
+<script>
+/*function f1()
+{
+num1=prompt("Enter fisrt number");
+num2=prompt("Enter second number");
+num1=parseFloat(num1);
+if(isNaN(num1))
+{
+ alert("Nahi he ");
+}
+num2=parseFloat(num2);
+sum=num1+num2;
+alert("Number are" + num1+" "+num2);
+alert("sum is:" +sum);
+}*/
+
+
+function f2()
+{
+name=prompt("Enter Your Name");
+add=prompt("Enter Your Address");
+mob=prompt("Enter Your Mobile no");
+email=prompt("Enter Your Email");
+dob=prompt("Enter Your DOB");
+pass=prompt("Enter Your Password");
+document.getElementById("n1").innerHTML=" "+name;
+document.getElementById("a1").innerHTML=" "+add;
+document.getElementById("m1").innerHTML=" "+mob;
+document.getElementById("e1").innerHTML=" "+email;
+document.getElementById("d1").innerHTML=" "+dob;
+document.getElementById("p1").innerHTML=" "+pass;
+}
+</script>
+
+NaN:  Not a number 
+<br><br><br>
+Button
+<br>Name: <span id="n1"></span>
+<br>Address: <span id= "a1"></span>
+<br>Mobile: <span id= "m1"></span>
+<br>Email: <span id= "e1"></span>
+<br>DOB: <span id= "d1"></span>
+<br>Password: <span id= "p1"></span>

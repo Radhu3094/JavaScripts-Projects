@@ -1,0 +1,97 @@
+<input type="textarea" id="t2" style="height:50px; width:200px"><br>
+<input type='button' value='1' onclick="f1(1)" id='b1'>
+<input type='button' value='2' onclick="f2(2)" id='b2'>
+<input type='button' value='3' onclick="f3(3)" id='b3'><br>
+<input type='button' value='4' onclick="f4(4)" id='b4'>
+<input type='button' value='5' onclick="f5(5)" id='b5'>
+<input type='button' value='6' onclick="f6(6)" id='b6'><br>
+<input type='button' value='7' onclick="f7(7)" id='b7'>
+<input type='button' value='8' onclick="f8(8)" id='b8'>
+<input type='button' value='9' onclick="f9(9)" id='b9'><br>
+<input type='button' value='0' onclick ="f0(0)" id='b0'><br>
+<input type='button' value='+' onclick ="f11('+')" id='b11'>
+<input type='button' value='-' onclick ="f12('-')" id='b12'>
+<input type='button' value='=' onclick ="f13('=')" id='b13'>
+<script>
+function f1(str)
+{
+rt=document.getElementById("t2").value;
+str= rt+"1";
+document.getElementById("t2").value=str;
+}
+function f2(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"2";
+document.getElementById("t2").value=str;
+}
+function f3(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"3";
+document.getElementById("t2").value=str;
+}
+function f4(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"4";
+document.getElementById("t2").value=str;
+}
+function f5(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"5";
+document.getElementById("t2").value=str;
+}
+function f6(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"6";
+document.getElementById("t2").value=str;
+}
+function f7(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"7";
+document.getElementById("t2").value=str;
+}
+
+function f8(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"8";
+document.getElementById("t2").value=str;
+}
+
+function f9(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"9";
+document.getElementById("t2").value=str;
+}
+
+function f0(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"0";
+document.getElementById("t2").value=str;
+}
+
+function f11(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"+";
+document.getElementById("t2").value=str;
+}
+function f12(str)
+{
+rt=document.getElementById("t2").value;
+str=rt+"-";
+document.getElementById("t2").value=str;
+}
+function f13(str)
+{
+rt=document.getElementById("t2").value;
+document.getElementById("t2").value=eval(rt);
+}
+</script>

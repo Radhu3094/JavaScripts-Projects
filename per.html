@@ -1,0 +1,19 @@
+Enter first subject marks: <input type='text' id='i1'><br>
+Enter Second subject marks: <input type='text' id='i2'><br>
+Enter Third subject marks: <input type='text' id='i3'><br>
+Enter fourth subject marks: <input type='text' id='i4'><br>
+Enter fifth subject marks: <input type='text' id='i5'><br>
+<input type='button' value='Percentage' onclick='f1()'>
+<p id='ans'></p>
+<script>
+function f1()
+{
+s1=parseFloat(document.getElementById("i1").value);
+s2=parseFloat(document.getElementById("i2").value);
+s3=parseFloat(document.getElementById("i3").value);
+s4=parseFloat(document.getElementById("i4").value);
+s5=parseFloat(document.getElementById("i5").value);
+per=((s1+s2+s3+s4+s5)*100)/500;
+document.getElementById("ans").innerHTML= per;
+}
+</script>
